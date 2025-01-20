@@ -1,15 +1,13 @@
-import React from 'react'
-import { HERO_CONTENT } from '../constants'
+import React from "react";
+import { HERO_CONTENT } from "../constants";
 // import profilePic from "../assets/kevinRushProfile.png";
 import profilePic2 from "../assets/ProfilePic.png";
 import { motion } from "motion/react";
 
-
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay,},
-  }
-})
+  visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
+});
 
 function Hero() {
   return (
@@ -45,6 +43,32 @@ function Hero() {
             >
               {HERO_CONTENT}
             </motion.p>
+
+            {/* <button class="bg-gray-300 hover:bg-gradient-to-r from-pink-200 to-purple-700 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+              <svg
+                class="fill-current w-4 h-4 mr-2"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+              </svg>
+              <span>Resume</span>
+            </button> */}
+            <a
+              href="https://drive.google.com/file/d/1-HedRSHaBaOIhEmrtYgpOGMqQdhaczC1/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 
+              overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br 
+              from-pink-700 to-purple-700 group-hover:from-pink-500 group-hover:to-purple-500
+              hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 
+              dark:focus:ring-purple-800"
+            >
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 
+              rounded-md group-hover:bg-opacity-0">
+              View Resume
+              </span>
+            </a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
@@ -64,4 +88,4 @@ function Hero() {
   );
 }
 
-export default Hero
+export default Hero;
