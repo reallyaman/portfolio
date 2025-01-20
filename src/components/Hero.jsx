@@ -25,7 +25,7 @@ function Hero() {
             </motion.h1>
 
             <motion.span
-              variants={container(0.7)}
+              variants={container(0.5)}
               initial="hidden"
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500
@@ -35,7 +35,7 @@ function Hero() {
             </motion.span>
 
             <motion.p
-              variants={container(1.2)}
+              variants={container(1)}
               initial="hidden"
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter text-neutral-400"
@@ -53,7 +53,10 @@ function Hero() {
               </svg>
               <span>Resume</span>
             </button> */}
-            <a
+            <motion.a
+              variants={container(1.2)}
+              initial="hidden"
+              animate="visible"
               href="https://drive.google.com/file/d/1-HedRSHaBaOIhEmrtYgpOGMqQdhaczC1/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
@@ -68,7 +71,7 @@ function Hero() {
               >
                 View Resume
               </span>
-            </a>
+            </motion.a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
