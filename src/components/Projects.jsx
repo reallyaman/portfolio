@@ -1,5 +1,6 @@
 import { PROJECTS } from "../constants";
 import { motion } from "motion/react";
+import { FaGithub } from "react-icons/fa";
 
 
 const container = () => ({
@@ -28,13 +29,15 @@ function Projects() {
               transition={{ duration: 1, delay: 0.2 }}
               className="w-full lg:w-1/4"
             >
-              <img
-                className="mb-6 rounded"
-                src={project.image}
-                width={150}
-                height={150}
-                alt={project.title}
-              />
+              <a href="">
+                <img
+                  className="mb-6 rounded"
+                  src={project.image}
+                  width={150}
+                  height={150}
+                  alt={project.title}
+                />
+              </a>
             </motion.div>
 
             <motion.div
@@ -55,6 +58,15 @@ function Projects() {
                   {tech}
                 </span>
               ))}
+              <a href="">
+                {" "}
+                <div className=" flex">
+                  <FaGithub className=" mt-2 text-[fafbfc]" />
+                  <span className=" ml-2 mt-1 text-neutral-300">
+                    Source code
+                  </span>
+                </div>
+              </a>
             </motion.div>
           </div>
         ))}

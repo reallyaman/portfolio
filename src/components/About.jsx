@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 function About() {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="border-b border-neutral-900 pb-20">
       <motion.h2
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -15,7 +15,7 @@ function About() {
       </motion.h2>
 
       <div className="flex flex-wrap lg:flex-nowrap">
-        <div className="w-full lg:w-1/2 lg:p-8">
+        <div className="w-full lg:w-1/2 lg:p-14">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
