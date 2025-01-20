@@ -15,9 +15,14 @@ function Contact() {
 
       <div className="text-center tracking-tighter text-neutral-400">
         <p className="my-4">{CONTACT.phoneNo}</p>
-        <a className="border-b" href="">
+        <button
+          className="border-b"
+          onClick={() => window.open(`mailto:${CONTACT.email}`)}
+        >
           {CONTACT.email}
-        </a>
+        </button>
+        <br />
+
       </div>
     </div>
   );
