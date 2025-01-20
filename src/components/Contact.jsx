@@ -14,7 +14,6 @@ function Contact() {
       </motion.h2>
 
       <div className="text-center tracking-tighter text-neutral-400">
-        <p className="my-4">{CONTACT.address}</p>
         <p className="my-4">{CONTACT.phoneNo}</p>
         <a className="border-b" href="">
           {CONTACT.email}
