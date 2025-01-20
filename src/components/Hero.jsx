@@ -77,7 +77,7 @@ function Hero() {
               initial={{ x: +100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.5 }}
-              className=" opacity-1 will-change-auto transform-none w-[80%]"
+              className=" opacity-1 will-change-auto transform-none w-[80%] rounded-xl"
               src={profilePic2}
               alt=""
             />
