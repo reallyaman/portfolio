@@ -1,4 +1,4 @@
-import image from "../assets/about2.jpg";
+import image from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "motion/react";
 
