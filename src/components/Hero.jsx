@@ -1,7 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants";
-// import profilePic from "../assets/kevinRushProfile.png";
-import profilePic2 from "../assets/ProfilePic.png";
+import profilePic2 from "../assets/ProfilePic.jpeg";
 import { motion } from "motion/react";
 
 const container = (delay) => ({
@@ -59,10 +58,9 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 
-              overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br 
-              from-pink-700 to-purple-700 group-hover:from-pink-500 group-hover:to-purple-500
-              hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 
-              dark:focus:ring-purple-800"
+              overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br 
+              from-pink-500 to-purple-900 group-hover:from-pink-500 group-hover:to-purple-500
+              text-white "
             >
               <span
                 className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 
@@ -79,7 +77,7 @@ function Hero() {
               initial={{ x: +100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.5 }}
-              className=" opacity-1 will-change-auto transform-none"
+              className=" opacity-1 will-change-auto transform-none w-[80%]"
               src={profilePic2}
               alt=""
             />
