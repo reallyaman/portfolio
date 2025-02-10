@@ -3,11 +3,6 @@ import { motion } from "motion/react";
 import { FaGithub } from "react-icons/fa";
 
 
-const container = () => ({
-  hidden: { x: -100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: 1 } },
-});
-
 function Projects() {
   return (
     <div className="border-b border-neutral-900 pb-4">

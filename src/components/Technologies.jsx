@@ -3,7 +3,6 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import powerBIlogo from "../assets/power-bi.svg";
 import { RiNodejsLine } from "react-icons/ri";
 import { motion } from "motion/react";
-import { animate } from "motion";
 
 const iconVariants = (duration) => ({
   hidden: { y: -10 },
