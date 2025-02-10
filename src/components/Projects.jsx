@@ -24,7 +24,7 @@ function Projects() {
               transition={{ duration: 1, delay: 0.2 }}
               className="w-full lg:w-1/4"
             >
-              <a href="">
+              <a href={project.url}>
                 <img
                   className="mb-6 rounded"
                   src={project.image}
@@ -53,10 +53,9 @@ function Projects() {
                   {tech}
                 </span>
               ))}
-              <a href="">
-                {" "}
+              <a href={project.code}>
                 <div className=" flex">
-                  <FaGithub className=" mt-2 text-[fafbfc]" />
+                  <FaGithub className=" mt-2 text-[#cccfd5]" />
                   <span className=" ml-2 mt-1 text-neutral-300">
                     Source code
                   </span>

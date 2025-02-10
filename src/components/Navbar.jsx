@@ -2,7 +2,7 @@ import logo from "../assets/ApLogo.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+// import { FaSquareXTwitter } from "react-icons/fa6";
 
 function Navbar() {
   return (
@@ -29,9 +29,9 @@ function Navbar() {
           <FaInstagram className=" hover:text-[#c13584]" />
         </a>
 
-        <a href="">
+        {/* <a href="">
           <FaSquareXTwitter className=" hover:text-[#000000] hover:bg-white" />
-        </a>
+        </a> */}
       </div>
     </nav>
   );

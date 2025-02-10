@@ -1,4 +1,3 @@
-import React from "react";
 import { HERO_CONTENT } from "../constants";
 import profilePic2 from "../assets/ProfilePic.jpeg";
 import { motion } from "motion/react";
@@ -43,30 +42,20 @@ function Hero() {
               {HERO_CONTENT}
             </motion.p>
 
-            {/* <button class="bg-gray-300 hover:bg-gradient-to-r from-pink-200 to-purple-700 hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-              <svg
-                class="fill-current w-4 h-4 mr-2"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-              </svg>
-              <span>Resume</span>
-            </button> */}
             <motion.a
               variants={container(1.2)}
               initial="hidden"
               animate="visible"
-              href="https://drive.google.com/file/d/1-HedRSHaBaOIhEmrtYgpOGMqQdhaczC1/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DkpduxVFPBQYHLvv-oQVJ27k1eJlwz3b/view"
               target="_blank"
               rel="noopener noreferrer"
               className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 
               overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br 
-              from-pink-500 to-purple-900 group-hover:from-pink-500 group-hover:to-purple-500
+              from-pink-500 to-purple-900 hover:from-pink-500 hover:to-purple-500
               text-white "
             >
               <span
-                className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 
+                className="relative px-5 py-2.5 transition-all ease-in duration-75
               rounded-md group-hover:bg-opacity-0"
               >
                 View Resume
